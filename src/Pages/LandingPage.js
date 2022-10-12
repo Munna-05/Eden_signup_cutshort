@@ -27,9 +27,7 @@ const LandingPage = (props) => {
         pageOne:data
        }))
    
-    useEffect(() => {
-       
-       
+    useEffect(() => {    
         if (props.page === '1') {
             setOne('Welcome! First things first...')
             setOneSub('You can always change them later')
@@ -71,12 +69,10 @@ const LandingPage = (props) => {
 
 
         }
-       
-
     }, [props])
 
     return (
-        <div><LandingPageComponent data={data} /></div>
+        <div><LandingPageComponent data={data}/></div>
     )
 }
 

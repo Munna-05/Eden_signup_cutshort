@@ -5,7 +5,7 @@ const Form2 = (props) => {
     const [button, setButton] = useState('')
     const [last, setLast] = useState(false)
     const [success, setSuccess] = useState(false)
-    // console.log('form2',props.data)
+
     useEffect(() => {
         if (props.data === '4') {
             setButton('Launch Eden')
@@ -27,8 +27,8 @@ const Form2 = (props) => {
         <div>
 
             {last ? <div className=' flex justify-center'>
-                <div className='grid grid-cols-2 gap-5'>
-                    <div className='rounded border border-slate-300 border-1 hover:border-indigo-500 w-48' >
+                <div className='grid grid-cols-2 gap-6' >
+                    <div className='rounded border border-slate-300 border-1 hover:border-indigo-500 w-48 border' >
                         <div className='h-16'>
 
                         </div>
@@ -67,10 +67,10 @@ const Form2 = (props) => {
                 : null}
 
             <div className='flex justify-center'>
-                <div className='mt-4 md:w-3/12 sm:w-100'>
+                <div className='mt-4 md:w-3/12 sm:w-fit'>
 
                     <Link to={`/${param}`}>
-                        <button className='mt-5 bg-indigo-600 font-semibold rounded-md text-white px-3 py-4 w-full'>{button}</button>
+                        <button className='mt-5 bg-indigo-600 font-semibold rounded-md text-white px-3 py-4 w-full'>Create Workspace</button>
                     </Link>
                 </div>
             </div>

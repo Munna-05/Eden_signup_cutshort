@@ -24,7 +24,7 @@ const Form = (props) => {
         <div>
 
             {form ? <div className='flex justify-center'>
-                <div className='md:w-3/12 sm:w-fit' >
+                <div className='md:w-3/12 sm:fit' >
                     <div className='flex text-sm text-slate-600 font-semibold  mt-2' ><span>Full Name</span><br /></div>
                     <input className='border rounded py-3 mt-1 text-sm px-2 w-full' placeholder='Steve Jobs' type="text" />
                     <div className='flex text-sm text-slate-600 font-semibold  mt-2'><span>Display Name</span><br /></div>
@@ -33,7 +33,7 @@ const Form = (props) => {
 
                 </div>
             </div> :
-                <div className='flex justify-center'>
+                <div className='flex justify-center '>
                      <div className='md:w-3/12 sm:w-fit' >
                     <div className='flex px-6 text-sm text-slate-600 font-semibold mt-2' style={{ width: '90%' }}><span>Workspace Name</span><br /></div>
                     <input className='border rounded py-3 mt-1 text-sm px-2' style={{ width: '90%' }} placeholder='Steve Jobs' type="text" />
@@ -47,7 +47,7 @@ const Form = (props) => {
 
 
             <div className='flex justify-center'>
-                <div className='mt-4 md:w-3/12 sm:w-10'>
+                <div className='mt-4 md:w-3/12 sm:w-fit'>
 
                     <Link to={`/${param}`}>
                         <button className='mt-5 bg-indigo-600 font-semibold rounded-md text-white px-3 py-4 w-full'>Create Workspace</button>
