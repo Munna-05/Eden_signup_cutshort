@@ -6,12 +6,10 @@ import LandingPage from './Pages/LandingPage';
 import { useParams } from 'react-router-dom'
 
 
-
 //pages
 
 
 function App() {
-  const param = useParams()
   const one = '1'
   const two = '2'
   const three = '3'

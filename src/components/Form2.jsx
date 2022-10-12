@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom'
 const Form2 = (props) => {
     const [button, setButton] = useState('')
     const [last, setLast] = useState(false)
-    const [success,setSuccess]=useState(false)
+    const [success, setSuccess] = useState(false)
+    // console.log('form2',props.data)
     useEffect(() => {
-        if (props.data == '4') {
+        if (props.data === '4') {
             setButton('Launch Eden')
             setLast(false)
             setSuccess(true)
@@ -18,17 +19,16 @@ const Form2 = (props) => {
         }
     })
     let param = parseInt(props.data)
-    console.log('form', props)
     param = param + 1
     if (param > 4) {
         param = ''
     }
     return (
         <div>
-            
-            {last ? <div className=' flex justify-center '>
-                <div className='grid grid-cols-2 gap-9 h-40 '>
-                    <div className='rounded border border-slate-300 border-1 hover:border-indigo-500' style={{ width: '12.4vw' }}>
+
+            {last ? <div className=' flex justify-center'>
+                <div className='grid grid-cols-2 gap-5'>
+                    <div className='rounded border border-slate-300 border-1 hover:border-indigo-500 w-48' >
                         <div className='h-16'>
 
                         </div>
@@ -42,7 +42,7 @@ const Form2 = (props) => {
                         </div>
 
                     </div>
-                    <div className='rounded border border-slate-300 border-1 hover:border-indigo-500' style={{ width: '12.4vw' }}>
+                    <div className='rounded border border-slate-300 border-1 hover:border-indigo-500 w-48' >
                         <div className='h-16'>
 
                         </div>
@@ -62,15 +62,17 @@ const Form2 = (props) => {
 
                 </div>
 
-               
+
             </div>
-                :null}
+                : null}
 
-            <div className='mt-1'>
+            <div className='flex justify-center'>
+                <div className='mt-4 md:w-3/12 sm:w-100'>
 
-                <Link to={`/${param}`}>
-                    <button className='mt-5 bg-indigo-600 font-semibold rounded-md text-white px-3 py-4' style={{ width: '90%' }}>{button}</button>
-                </Link>
+                    <Link to={`/${param}`}>
+                        <button className='mt-5 bg-indigo-600 font-semibold rounded-md text-white px-3 py-4 w-full'>{button}</button>
+                    </Link>
+                </div>
             </div>
 
         </div>
