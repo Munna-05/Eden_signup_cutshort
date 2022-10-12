@@ -70,7 +70,7 @@ const Form2 = (props) => {
                 <div className='mt-4 md:w-3/12 sm:w-fit'>
 
                     <Link to={`/${param}`}>
-                        <button className='mt-5 bg-indigo-600 font-semibold rounded-md text-white px-3 py-4 w-full'>Create Workspace</button>
+                        <button className='mt-5 bg-indigo-600 font-semibold rounded-md text-white px-3 py-4 w-full'>{button}</button>
                     </Link>
                 </div>
             </div>
